@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="title mb-32">
+        <h1 class="font-slab h-[10%] text-center leading-10 bg-green-600">Tip Calculator</h1>
+    </header>
+
+    <main class="flex justify-center items-center">
+        <section class="border-2 border-black w-4/12 h-80">
+            <form class="flex flex-col px-9 py-7" id="input-form"> 
+                <label for="bill-amt" class="text-3xl font-bold">Bill</label>
+                <input type="text" id="bill-amt" class="border-black border-2 w-96 p-1 my-2 text-center text-bold">
+                <label for="tip-amt" class="text-3xl font-bold">Tip %</label>
+                <input type="text" id="tip-amt" class="border-black border-2 w-96 p-1 my-2 text-center text-bold">
+                <label for="number-of-people" class="text-3xl font-bold">Number of people</label>
+                <input type="text" id="number-of-people" class="border-black border-2 w-96 p-1 my-2 text-center text-bold">
+            </form>
+        </section>
+        
+        <section class="border-2 border-black w-4/12 h-80">
+            <form id="output-form">
+                <div class="tip-wrapper flex justify-around items-center my-5">
+                    <label for="calc-tip">
+                        <span class="text-3xl font-bold">Tip</span><br>
+                        <span class="font-semibold">In Person</span>
+                    </label>
+                    <input type="text" id="calc-tip" disabled class="border-black border-2 w-28 h-10 text-xl text-center text-bold">
+                </div>
+                <div class="total-tip-wrapper flex justify-around items-center my-12">
+                    <label for="calc-total-tip">
+                        <span class="text-3xl font-bold">Total</span><br>
+                        <span class="font-semibold ml-2">Tip</span>
+                    </label>
+                    <input type="text" id="calc-total-tip" disabled class="border-black border-2 w-28 h-10 text-xl text-center text-bold">
+                </div>
+                <div class="total-amt-wrapper flex justify-around items-center my-2">
+                    <label for="calc-total-amt">
+                        <span class="text-3xl font-bold">Total</span><br>
+                        <span class="font-semibold">Amount</span>
+                    </label>
+                    <input type="text" id="calc-total-amt" disabled class="border-black border-2 w-28 h-10 text-xl text-center text-bold">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
